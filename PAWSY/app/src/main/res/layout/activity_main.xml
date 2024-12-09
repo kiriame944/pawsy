@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fpawsy3"
+    android:padding="16dp">
+
+    <!-- Logo de PAWSY -->
+<ImageView
+android:id="@+id/logo"
+android:layout_width="250dp"
+android:layout_height="250dp"
+android:layout_marginTop="50dp"
+android:layout_centerHorizontal="true"
+android:src="@drawable/logo_pawsy2"
+/>
+
+
+<TextView
+android:id="@+id/slogan"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/logo"
+android:layout_marginTop="20dp"
+android:layout_centerHorizontal="true"
+android:text="Encontrando huellas, reuniendo corazones"
+android:textColor="#5b2c6f"
+android:textSize="20sp"
+android:textStyle="italic"
+android:gravity="center" />
+
+    <!-- Botón Registro -->
+<Button
+android:id="@+id/botoncitoRgtro"
+android:layout_width="250dp"
+android:layout_height="70dp"
+android:layout_below="@id/slogan"
+android:layout_marginTop="32dp"
+android:layout_centerHorizontal="true"
+android:text="Registro"
+android:textColor="#FFFFFF"
+android:backgroundTint="#a3e4d7"
+android:padding="10dp"
+android:textSize="20dp"
+android:fontFamily="sans-serif" />
+
+    <!-- Botón Inicio de Sesión -->
+<Button
+android:id="@+id/botoncitoIS"
+android:layout_width="250dp"
+android:layout_height="70dp"
+android:layout_below="@id/botoncitoRgtro"
+android:layout_marginTop="23dp"
+android:layout_centerHorizontal="true"
+android:text="Inicio de sesión"
+android:textColor="#FFFFFF"
+android:backgroundTint="#a3e4d7"
+android:textSize="20dp"
+android:padding="20dp"
+android:fontFamily="sans-serif" />
+
+    <!-- Mensaje Bienvenida -->
+<TextView
+android:id="@+id/bienvenida"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:layout_centerHorizontal="true"
+android:text="Bienvenido a Pawsy"
+android:textColor="#d1f2eb"
+android:textSize="18sp"
+android:layout_marginBottom="150dp"
+android:gravity="center" />
+
+    </RelativeLayout>

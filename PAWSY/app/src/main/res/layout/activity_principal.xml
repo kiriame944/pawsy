@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cincolpawsy"
+    android:padding="16dp">
+
+    <!-- Logo de PAWSY -->
+    <ImageView
+        android:id="@+id/logoPaginaPrincipal"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cincofpawsy"
+        android:contentDescription="Logo Pawsy" />
+
+    <!-- Título de Bienvenida -->
+    <TextView
+        android:id="@+id/tituloBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoPaginaPrincipal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Bienvenido a PAWSY"
+        android:textColor="#5b2c6f"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Botón Registrar Mascota -->
+    <Button
+        android:id="@+id/botonRegistrarMascota"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/tituloBienvenida"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="55dp"
+        android:text="Registrar Mascota Perdida"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#7fb3d5"
+        android:textSize="18sp"
+        android:padding="10dp" />
+
+    <!-- RadioButton para Registrar Mascota (al lado del botón) -->
+    <RadioButton
+        android:id="@+id/radioRegistrarMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/botonRegistrarMascota"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/botonRegistrarMascota"
+        android:buttonTint="#FFFFFF" /> <!-- El radio button sin texto -->
+
+    <!-- Botón Ver Mascotas Registradas -->
+    <Button
+        android:id="@+id/botonVerMascotas"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/botonRegistrarMascota"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="55dp"
+        android:text="Ver Mascotas Registradas"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3498db"
+        android:textSize="18sp"
+        android:padding="10dp" />
+
+    <!-- RadioButton para Ver Mascotas (al lado del botón) -->
+    <RadioButton
+        android:id="@+id/radioVerMascotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/botonVerMascotas"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/botonVerMascotas"
+        android:buttonTint="#FFFFFF" /> <!-- El radio button sin texto -->
+
+</RelativeLayout>

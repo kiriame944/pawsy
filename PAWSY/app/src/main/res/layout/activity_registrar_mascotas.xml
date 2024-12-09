@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fpawsy3"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/logoRegistrarMascota"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_pawsy2"
+        android:contentDescription="Logo Pawsy" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tituloRegistrarMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoRegistrarMascota"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Ingresa los datos de tu mascota"
+        android:textColor="#5b2c6f"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Nombre -->
+    <EditText
+        android:id="@+id/nombreMascota"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tituloRegistrarMascota"
+        android:layout_marginTop="20dp"
+        android:hint="Nombre"
+        android:padding="12dp"
+        android:backgroundTint="#5b2c6f"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- Descripción -->
+    <EditText
+        android:id="@+id/descripcionMascota"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/nombreMascota"
+        android:layout_marginTop="10dp"
+        android:hint="Descripción de la mascota"
+        android:padding="12dp"
+        android:backgroundTint="#5b2c6f"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- Ubicación -->
+    <EditText
+        android:id="@+id/ubicacionMascota"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/descripcionMascota"
+        android:layout_marginTop="10dp"
+        android:hint="Última ubicación donde se vio"
+        android:padding="12dp"
+        android:backgroundTint="#5b2c6f"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- Fecha -->
+    <EditText
+        android:id="@+id/fechaMascota"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/ubicacionMascota"
+        android:layout_marginTop="10dp"
+        android:hint="Fecha en la que se perdió"
+        android:padding="12dp"
+        android:backgroundTint="#5b2c6f"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:inputType="date"
+        android:textSize="16sp" />
+
+    <!-- Contacto -->
+    <EditText
+        android:id="@+id/contactoMascota"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/fechaMascota"
+        android:layout_marginTop="10dp"
+        android:hint="Contacto del dueño"
+        android:padding="12dp"
+        android:backgroundTint="#5b2c6f"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/botonSubirDatos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/contactoMascota"
+        android:layout_marginTop="20dp"
+        android:text="Subir Datos"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#76d7c4"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tresfpawsy"
+    android:padding="16dp">
+
+<ImageView
+    android:id="@+id/logoRegistro"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_marginTop="30dp"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/treslpawsy"
+    android:contentDescription="Logo Pawsy" />
+
+<TextView
+    android:id="@+id/tituloRegistro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/logoRegistro"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"
+    android:text="Registro"
+    android:textColor="#5b2c6f"
+    android:textSize="28sp"
+    android:textStyle="bold"
+    android:gravity="center" />
+
+<EditText
+    android:id="@+id/nombre"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_below="@id/tituloRegistro"
+    android:layout_marginTop="20dp"
+    android:hint="Nombre completo"
+    android:padding="12dp"
+    android:backgroundTint="#5b2c6f"
+    android:textColor="#5b2c6f"
+    android:textColorHint="#000000"
+    android:textSize="16sp" />
+
+<EditText
+    android:id="@+id/telefono"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_below="@id/nombre"
+    android:layout_marginTop="10dp"
+    android:hint="Num. Telefónico"
+    android:padding="12dp"
+    android:backgroundTint="#5b2c6f"
+    android:textColor="#5b2c6f"
+    android:textColorHint="#000000"
+    android:textSize="16sp" />
+
+<EditText
+    android:id="@+id/correo"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_below="@id/telefono"
+    android:layout_marginTop="10dp"
+    android:hint="Correo Electrónico"
+    android:padding="12dp"
+    android:backgroundTint="#5b2c6f"
+    android:textColor="#5b2c6f"
+    android:textColorHint="#000000"
+    android:textSize="16sp" />
+
+<EditText
+    android:id="@+id/contrasena"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_below="@id/correo"
+    android:layout_marginTop="10dp"
+    android:hint="Contraseña"
+    android:padding="12dp"
+    android:backgroundTint="#5b2c6f"
+    android:textColor="#5b2c6f"
+    android:textColorHint="#000000"
+    android:textSize="16sp" />
+
+<Button
+    android:id="@+id/botonRegistrarse"
+    android:layout_width="250dp"
+    android:layout_height="60dp"
+    android:layout_below="@id/contrasena"
+    android:layout_marginTop="35dp"
+    android:layout_marginLeft="55dp"
+    android:text="Registrarse"
+    android:textColor="#FFFFFF"
+    android:backgroundTint="#d7bde2"
+    android:textSize="18sp"
+    android:padding="10dp" />
+
+<Button
+    android:id="@+id/botonRegresa"
+    android:layout_width="250dp"
+    android:layout_height="60dp"
+    android:layout_below="@id/botonRegistrarse"
+    android:layout_marginLeft="55dp"
+    android:layout_marginTop="30dp"
+    android:text="Regresar"
+    android:textColor="#FFFFFF"
+    android:backgroundTint="#f9bfda "
+    android:textSize="18sp"
+    android:padding="10dp" />
+</RelativeLayout>

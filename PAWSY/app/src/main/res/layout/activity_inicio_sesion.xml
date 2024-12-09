@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dosfpawsy"
+    android:padding="16dp">
+
+<ImageView
+android:id="@+id/logoInicioSesion"
+android:layout_width="120dp"
+android:layout_height="120dp"
+android:layout_marginTop="30dp"
+android:layout_centerHorizontal="true"
+android:src="@drawable/cuatrolpawsy"
+android:contentDescription="Logo Pawsy" />
+
+<TextView
+android:id="@+id/tituloInicioSesion"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/logoInicioSesion"
+android:layout_marginTop="20dp"
+android:layout_centerHorizontal="true"
+android:text="Inicio de sesión"
+android:textColor="#5b2c6f"
+android:textSize="28sp"
+android:textStyle="bold"
+android:gravity="center" />
+
+<EditText
+android:id="@+id/correoInicioSesion"
+android:layout_width="match_parent"
+android:layout_height="48dp"
+android:layout_below="@id/tituloInicioSesion"
+android:layout_marginTop="35dp"
+android:hint="Correo Electrónico"
+android:padding="12dp"
+android:backgroundTint="#5b2c6f"
+android:textColor="#5b2c6f"
+android:textColorHint="#000000"
+android:inputType="textEmailAddress"
+android:textSize="16sp" />
+
+<EditText
+android:id="@+id/contrasenaInicioSesion"
+android:layout_width="match_parent"
+android:layout_height="48dp"
+android:layout_below="@id/correoInicioSesion"
+android:layout_marginTop="20dp"
+android:hint="Contraseña"
+android:padding="12dp"
+android:backgroundTint="#5b2c6f"
+android:textColor="#5b2c6f"
+android:textColorHint="#000000"
+android:inputType="textPassword"
+android:textSize="16sp" />
+
+
+<Button
+android:id="@+id/botonIniciarSesion"
+android:layout_width="250dp"
+android:layout_height="60dp"
+android:layout_below="@id/contrasenaInicioSesion"
+android:layout_marginTop="95dp"
+android:layout_marginLeft="55dp"
+android:text="Iniciar Sesión"
+android:textColor="#FFFFFF"
+android:backgroundTint="#d7bde2"
+android:textSize="18sp"
+android:padding="10dp" />
+
+<Button
+android:id="@+id/botonRegresarInicio"
+android:layout_width="250dp"
+android:layout_height="60dp"
+android:layout_below="@id/botonIniciarSesion"
+android:layout_marginTop="30dp"
+android:layout_marginLeft="55dp"
+android:text="Regresar"
+android:textColor="#FFFFFF"
+android:backgroundTint="#f9bfda"
+android:textSize="18sp"
+android:padding="10dp" />
+
+    </RelativeLayout>
